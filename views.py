@@ -1,5 +1,5 @@
 from core import app
-from core.models import db, Venue, Artist, Genres, Shows, venue_genres, artist_genres, show_artists 
+from models import db, Venue, Artist, Genres, Shows, venue_genres, artist_genres, show_artists 
 # from flask import jsonify
 import json
 import dateutil.parser
