@@ -1,6 +1,7 @@
 import os
 SECRET_KEY = os.urandom(32)
 # Grabs the folder where the script runs.
+#did not add basedir to mapped config
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Enable debug mode.
