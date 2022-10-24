@@ -1,5 +1,5 @@
 from core import app
-from models import db, Venue, Artist, Genres, Shows, venue_genres, artist_genres, show_artists 
+from models import db, Venue, Artist, Genres, Shows 
 # from flask import jsonify
 import json
 import dateutil.parser
@@ -317,8 +317,7 @@ def create_venue_submission():
       seeking_description = request.form['seeking_description']
     )
  
-
-
+    
     new_genre = Genres.query.filter(Genres.genre.in_(request.form.getlist('genres'))).all()
     new_venue.genres.extend(new_genre)
 
